@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CaspianCode</title>
+  <!-- Подключение CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Навигация -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+<!-- Подключение JavaScript -->
+<script src="index.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page Navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Навигация -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- "Главная" страница -->
+<section id="home" style="height: 100vh; background: lightblue;">
+  <h1>Home</h1>
+  <p>Добро пожаловать на главную страницу! Здесь представлена начальная информация вашего сайта.</p>
+</section>
+
+<!-- "Услуги" -->
+<section id="services" style="height: 100vh; background: lightgreen;">
+  <h1>Services</h1>
+  <p>Здесь вы можете описать предоставляемые услуги. Выделите ключевые особенности, которые заинтересуют ваших клиентов.</p>
+  <ul>
+    <li>Услуга 1: Описание</li>
+    <li>Услуга 2: Описание</li>
+    <li>Услуга 3: Описание</li>
+  </ul>
+</section>
+
+<!-- "Портфолио" -->
+<section id="portfolio" style="height: 100vh; background: lightcoral;">
+  <h1>Portfolio</h1>
+  <p>Здесь размещаются примеры выполненных работ. Используйте изображения и описания, чтобы привлечь внимание.</p>
+  <div style="display: flex; gap: 20px;">
+    <div style="width: 200px; height: 200px; background: rgba(0,0,0,0.2);">
+      <p>Пример работы 1</p>
+    </div>
+    <div style="width: 200px; height: 200px; background: rgba(0,0,0,0.4);">
+      <p>Пример работы 2</p>
+    </div>
+    <div style="width: 200px; height: 200px; background: rgba(0,0,0,0.6);">
+      <p>Пример работы 3</p>
+    </div>
+  </div>
+</section>
+
+<!-- "Контакты" -->
+<section id="contact" style="height: 100vh; background: lightsalmon;">
+  <h1>Contact</h1>
+  <p>Заполните форму, чтобы связаться с нами:</p>
+  <form action="#" method="post">
+    <label for="name">Имя:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="message">Сообщение:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+<script src="index.js"></script>
+</body>
+</html>

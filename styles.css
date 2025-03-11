@@ -1,0 +1,202 @@
+/* Общие стили для html и body */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+/* Стили навигации */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+
+nav ul li a.active {
+    color: #fff;
+    background-color: #00bfff;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+/* Общие стили для секций */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Каждая секция на всю высоту экрана */
+    padding: 20px;
+}
+
+section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* Стили для ссылок внутри секций */
+section a {
+    text-decoration: none;
+    color: #00bfff;
+    transition: color 0.2s;
+}
+
+section a:hover {
+    color: #005f7f; /* Более темный оттенок для эффекта hover */
+}
+
+/* Стили главной секции (Home) */
+#home {
+    background: linear-gradient(135deg, #87cefa, #1e90ff);
+    color: white;
+}
+
+/* Стили для секции Services */
+#services {
+    background: linear-gradient(135deg, #90ee90, #32cd32);
+    color: white;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services ul li {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Стили для секции Portfolio */
+#portfolio {
+    background: linear-gradient(135deg, #ff7f7f, #ff4500);
+    color: white;
+}
+
+#portfolio div {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #333;
+    font-size: 1.2em;
+}
+
+#portfolio div p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Стили для секции Contact и формы */
+#contact {
+    background: linear-gradient(135deg, #ffdab9, #ff7f50);
+    color: white;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+form label {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form button:hover {
+    background-color: #0077b3;
+}
+
+/* Общие настройки для медиа-запросов */
+@media (max-width: 768px) {
+    section h1 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form button {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+}
